@@ -1,21 +1,30 @@
 import './App.css';
 import List from "../List";
-import { useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import Search from "../Search/Search";
 
-const data = ['html', 'css', 'js', 'typescript', 'redux']
+const data = ['html', 'css', 'javascript', 'typescript', 'React']
 
 function App() {
   const [search, setSearch] = useState()
 
+  const filterItem = useMemo(() => {
+    return data.filter(item => item.startsWith(search))
+  }, [search])
+
+  const onChange = useCallback((event) => {
+    setSearch(event.target.value)
+  }, [])
+
   return (
     <div className="App">
       <header className="App-header">
-        <Search value={search}
-        onChange={(event) => setSearch(event.target.value)}>
-          Find course:
+        <Search
+          value={search}
+          onChange={onChange}>
+          Find:
         </Search>
-        <List items={data}/>
+        <List items={filterItem}/>
       </header>
     </div>
   );

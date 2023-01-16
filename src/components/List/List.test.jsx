@@ -1,7 +1,7 @@
 import {render, screen} from '@testing-library/react'
 import List from "./List";
 
-const data = ['html', 'css', 'js']
+const data = ['html', 'css', 'javascript', 'React']
 
 describe('List component', () => {
   test('List renders', () => {
