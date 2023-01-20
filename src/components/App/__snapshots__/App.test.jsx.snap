@@ -8,21 +8,75 @@ Object {
       <div
         class="App"
       >
-        <header
-          class="App-header"
+        <div
+          class="mt-5 container"
         >
-          <label
-            class="label"
+          <div
+            class="row"
           >
-            Find:
-            <input
-              class="input"
-              placeholder="search..."
-              type="text"
-              value=""
+            <div
+              class="col"
+            >
+              <input
+                class="form-control"
+                name="firstArg"
+                placeholder="аргумент 1"
+                value=""
+              />
+            </div>
+            <div
+              class="col"
+            >
+              <select
+                aria-label="оператор"
+                class="form-select"
+                name="operator"
+                required=""
+                role="listbox"
+              >
+                <option
+                  value="+"
+                >
+                  +
+                </option>
+                <option
+                  value="-"
+                >
+                  -
+                </option>
+                <option
+                  value="*"
+                >
+                  *
+                </option>
+              </select>
+            </div>
+            <div
+              class="col"
+            >
+              <input
+                class="form-control form-control"
+                name="secondArg"
+                placeholder="аргумент 2"
+                value=""
+              />
+            </div>
+            <div
+              class="col"
             />
-          </label>
-        </header>
+            <div
+              class="mt-2 col-md-12"
+            >
+              <button
+                class="text-white w-100 btn btn-primary"
+                role="submitButton"
+                type="submit"
+              >
+                Рассчитать!
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>,
@@ -30,21 +84,75 @@ Object {
     <div
       class="App"
     >
-      <header
-        class="App-header"
+      <div
+        class="mt-5 container"
       >
-        <label
-          class="label"
+        <div
+          class="row"
         >
-          Find:
-          <input
-            class="input"
-            placeholder="search..."
-            type="text"
-            value=""
+          <div
+            class="col"
+          >
+            <input
+              class="form-control"
+              name="firstArg"
+              placeholder="аргумент 1"
+              value=""
+            />
+          </div>
+          <div
+            class="col"
+          >
+            <select
+              aria-label="оператор"
+              class="form-select"
+              name="operator"
+              required=""
+              role="listbox"
+            >
+              <option
+                value="+"
+              >
+                +
+              </option>
+              <option
+                value="-"
+              >
+                -
+              </option>
+              <option
+                value="*"
+              >
+                *
+              </option>
+            </select>
+          </div>
+          <div
+            class="col"
+          >
+            <input
+              class="form-control form-control"
+              name="secondArg"
+              placeholder="аргумент 2"
+              value=""
+            />
+          </div>
+          <div
+            class="col"
           />
-        </label>
-      </header>
+          <div
+            class="mt-2 col-md-12"
+          >
+            <button
+              class="text-white w-100 btn btn-primary"
+              role="submitButton"
+              type="submit"
+            >
+              Рассчитать!
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>,
   "debug": [Function],
